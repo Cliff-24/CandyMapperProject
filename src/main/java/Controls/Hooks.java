@@ -1,10 +1,9 @@
 package Controls;
 
 
-    import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.OutputType;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
-import org.openqa.selenium.TakesScreenshot;
+import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -13,16 +12,14 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-
-
-import java.io.File;
+import java.util.Properties;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Properties;
+
 
 
 public class Hooks {
